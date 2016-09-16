@@ -1,5 +1,8 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@-ms-viewport{
+  width: device-width;
+}
 
 body {
   background-color: #aed581;
@@ -51,9 +54,7 @@ body {
   margin-top: -5px;
   height: 12px;
   display: block;
-  -webkit-animation: fadeinout 4s linear forwards;
-  animation: fadeinout 4s linear forwards;
-  opacity: 0;
+  
 }
 
 .valid-number {
@@ -63,15 +64,7 @@ body {
   margin-top: -5px;
   height: 12px;
   display: block;
-  -webkit-animation: fadeinout 6s linear forwards;
-  animation: fadeinout 6s linear forwards;
-  opacity: 0;
+  
 }
 
-@-webkit-keyframes fadeinout {
-  50% { opacity: 1; }
-}
 
-@keyframes fadeinout {
-  50% { opacity: 1; }
-}
