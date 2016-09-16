@@ -41,6 +41,9 @@ gem 'simple_form'
 # Use twilio gem to connect to twilio's api
 gem 'twilio-ruby', '~> 4.11.1'
 
+# Use figaro gem for secure configuration
+gem "figaro"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri

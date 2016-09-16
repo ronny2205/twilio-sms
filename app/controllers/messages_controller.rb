@@ -8,8 +8,7 @@ class MessagesController < ApplicationController
     @message = Message.new(message_params)
       boot_twilio
       sms = @client.messages.create(
-        # from: ENV['TWILIO_NUMBER'],
-        from: '+16313235078',
+        from: ENV['TWILIO_PHONE_NUMBER'],
         to: '+1' + @message.phone_number,
         body: "This is a beautiful day!"
       )
@@ -24,10 +23,8 @@ class MessagesController < ApplicationController
   end
 
   def boot_twilio
-    # account_sid = ENV['TWILIO_ACCOUNT_SID']
-    # auth_token = ENV['TWILIO_AUTH_TOKEN']
-    account_sid = 'AC144db403f1bcc71113164f7deaf53a2c'
-    auth_token = '4dca77ff4b37cba99cfb3d7a67292f48'
+    account_sid = ENV['TWILIO_ACCOUNT_SID']
+    auth_token = ENV['TWILIO_AUTH_TOKEN']
     @client = Twilio::REST::Client.new account_sid, auth_token
   end
 end
