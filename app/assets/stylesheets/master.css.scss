@@ -43,3 +43,35 @@ body {
 .form-group {
   margin-bottom: 20px;
 }
+
+.non-valid-number {
+  color: #bf360c;
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-top: -5px;
+  height: 12px;
+  display: block;
+  -webkit-animation: fadeinout 4s linear forwards;
+  animation: fadeinout 4s linear forwards;
+  opacity: 0;
+}
+
+.valid-number {
+  color: #00796b;
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-top: -5px;
+  height: 12px;
+  display: block;
+  -webkit-animation: fadeinout 6s linear forwards;
+  animation: fadeinout 6s linear forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeinout {
+  50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+  50% { opacity: 1; }
+}
