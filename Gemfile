@@ -35,7 +35,11 @@ gem 'bootstrap-sass', '~> 3.3.5.1'
 gem 'sprockets', '~> 3.0'
 gem 'sass-rails'
 
+# Use simple_form for forms
 gem 'simple_form'
+
+# Use twilio gem to connect to twilio's api
+gem 'twilio-ruby', '~> 4.11.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
