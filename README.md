@@ -1,24 +1,8 @@
-# README
+# Twilio-sms
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+A RoR web app that sends a text message to a user who submitts a phone number.
+The app uses Twilio’s API.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The app is deployed at https://twilio-sms-ronnyal.herokuapp.com,
+and currently works only for pre-authorized phone numbers
